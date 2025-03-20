@@ -1,0 +1,20 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(19Mar2025:21:49:58):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_21_49_58)
+s2::(19Mar2025:21:51:32):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_21_51_32)
+s3::(19Mar2025:21:51:37):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_21_51_37)
+s4::(19Mar2025:21:52:04):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_21_52_04)
+s5::(19Mar2025:21:52:08):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_21_52_08)
+s6::(19Mar2025:21:53:29):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_21_53_29)
+s7::(19Mar2025:21:55:15):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_21_55_15)
+s8::(19Mar2025:21:57:32):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_21_57_32)
+s9::(19Mar2025:21:58:24):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_21_58_24)
+s10::(19Mar2025:22:00:28):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_22_00_28)
+s11::(19Mar2025:22:01:47):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_22_01_47)
+s12::(19Mar2025:22:02:15):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_22_02_15)
+s13::(19Mar2025:22:03:23):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_22_03_23)
+s14::(19Mar2025:22:04:26):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_22_04_26)
+s15::(19Mar2025:22:05:01):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_22_05_01)
+s16::(19Mar2025:22:05:15):( xrun exec01.v exec01_tb.v )&&(./xcelium.d/env.d/env.history.19Mar2025_22_05_15)

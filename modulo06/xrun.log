@@ -1,0 +1,53 @@
+xrun(64): 24.09-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s001: Started on Mar 19, 2025 at 22:05:15 -03
+xrun
+	exec01.v
+	exec01_tb.v
+Recompiling... reason: file './exec01_tb.v' is newer than expected.
+	expected: Wed Mar 19 22:04:58 2025
+	actual:   Wed Mar 19 22:05:13 2025
+file: exec01_tb.v
+        a = 4'b0011; b = 4'b0001; c = 4'b0000; f = 4'b0111; ctrl = 1; #1 expect(1'b0000);
+                                                                                      |
+xmvlog: *W,INTOVF (exec01_tb.v,40|86): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+        a = 4'b0011; b = 4'b0001; c = 4'b0000; f = 4'b0111; ctrl = 0; #1 expect(1'b0000);
+                                                                                      |
+xmvlog: *W,INTOVF (exec01_tb.v,41|86): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+        a = 4'b0011; b = 4'b0001; c = 4'b0001; f = 4'b0111; ctrl = 0; #1 expect(1'b0001);
+                                                                                      |
+xmvlog: *W,INTOVF (exec01_tb.v,42|86): bit overflow during conversion from text [2.5(IEEE)] (1 bits).
+	module worklib.exec01_tb:v
+		errors: 0, warnings: 3
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		exec01_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.exec01_tb:v <0x2a5a0c1c>
+			streams:   7, words: 10893
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           7       7
+		Scalar wires:        1       -
+		Vectored wires:      5       -
+		Always blocks:       1       1
+		Initial blocks:      1       1
+		Pseudo assignments:  5       -
+	Writing initial simulation snapshot: worklib.exec01_tb:v
+Loading snapshot worklib.exec01_tb:v .................... Done
+xcelium> source /home/werlley/cadence/installs/XCELIUM2409/tools/xcelium/files/xmsimrc
+xcelium> run
+At time 1 a=00011 b=00001 c=00000 f=00011 ctrl=0 d=00001
+At time 2 a=00111 b=00011 c=00000 f=00011 ctrl=0 d=00011
+At time 3 a=00011 b=00001 c=00000 f=00111 ctrl=1 d=00000
+At time 4 a=00011 b=00001 c=00000 f=00111 ctrl=0 d=00000
+At time 5 a=00011 b=00001 c=00001 f=00111 ctrl=0 d=00001
+TEST PASSED
+Simulation complete via $finish(1) at time 5 NS + 0
+./exec01_tb.v:44         $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.09-s001: Exiting on Mar 19, 2025 at 22:05:16 -03  (total: 00:00:01)

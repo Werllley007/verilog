@@ -1,0 +1,46 @@
+xrun(64): 24.09-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s001: Started on Mar 20, 2025 at 16:24:06 -03
+xrun
+	controller.v
+	controller_tb.v
+file: controller_tb.v
+	module worklib.controller_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		controller_tb
+        .alu_op     (alu_op    )
+                          |
+xmelab: *W,CUVMPW (./controller_tb.v,19|26): port sizes differ in port connection(6/2) for the instance(controller_tb) .
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.controller:v <0x3dba0ee9>
+			streams:   7, words:  6369
+		worklib.controller_tb:v <0x420745c9>
+			streams:   2, words:  5590
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		          Instances  Unique
+		Modules:          2       2
+		Registers:       11      11
+		Scalar wires:    10       -
+		Expanded wires:   2       1
+		Vectored wires:   1       -
+		Always blocks:    2       2
+		Initial blocks:   1       1
+		Process Clocks:   1       1
+	Writing initial simulation snapshot: worklib.controller_tb:v
+Loading snapshot worklib.controller_tb:v .................... Done
+xcelium> source /home/werlley/cadence/installs/XCELIUM2409/tools/xcelium/files/xmsimrc
+xcelium> run
+R-type instruction passed
+TEST FAILED (LW)
+TEST FAILED (SW)
+TEST FAILED (BEQ)
+ALL TESTs PASSED
+Simulation complete via $finish(1) at time 50 NS + 0
+./controller_tb.v:54         $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.09-s001: Exiting on Mar 20, 2025 at 16:24:09 -03  (total: 00:00:03)

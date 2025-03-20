@@ -1,0 +1,8 @@
+#e1(20Mar2025:16:23:05): source ./xcelium.d/env.d/env.history.20Mar2025_16_23_05
+s1(20Mar2025:16:23:05):  xrun controller.v controller_tb.v 
+#e2(20Mar2025:16:23:14): source ./xcelium.d/env.d/env.history.20Mar2025_16_23_14
+s2(20Mar2025:16:23:14):  xrun controller.v controller_tb.v 
+#e3(20Mar2025:16:23:42): source ./xcelium.d/env.d/env.history.20Mar2025_16_23_42
+s3(20Mar2025:16:23:42):  xrun controller.v controller_tb.v 
+#e4(20Mar2025:16:24:06): source ./xcelium.d/env.d/env.history.20Mar2025_16_24_06
+s4(20Mar2025:16:24:06):  xrun controller.v controller_tb.v 

@@ -1,32 +1,44 @@
 xrun(64): 24.09-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	24.09-s001: Started on Mar 20, 2025 at 14:26:36 -03
+TOOL:	xrun(64)	24.09-s001: Started on Mar 20, 2025 at 15:38:51 -03
 xrun
 	exec02.v
-Recompiling... reason: file './exec02.v' is newer than expected.
-	expected: Thu Mar 20 14:19:37 2025
-	actual:   Thu Mar 20 14:26:34 2025
-file: exec02.v
-	module worklib.twelve_wrong:v
+	exec02_tb.v
+Recompiling... reason: file './exec02_tb.v' is newer than expected.
+	expected: Thu Mar 20 15:37:38 2025
+	actual:   Thu Mar 20 15:38:50 2025
+file: exec02_tb.v
+	module worklib.exec01_tb:v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		twelve_wrong
+		exec01_tb
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.twelve_wrong:v <0x2619659c>
-			streams:   0, words:     0
+		worklib.exec01_tb:v <0x1ba15073>
+			streams:   6, words:  9359
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		        Instances  Unique
-		Modules:        1       1
-		Registers:      4       4
-		Always blocks:  1       1
-	Writing initial simulation snapshot: worklib.twelve_wrong:v
-Loading snapshot worklib.twelve_wrong:v .................... Done
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           12      12
+		Vectored wires:       8       -
+		Always blocks:        1       1
+		Initial blocks:       1       1
+		Pseudo assignments:   4       -
+	Writing initial simulation snapshot: worklib.exec01_tb:v
+Loading snapshot worklib.exec01_tb:v .................... Done
 xcelium> source /home/werlley/cadence/installs/XCELIUM2409/tools/xcelium/files/xmsimrc
 xcelium> run
-xmsim: *W,RNQUIE: Simulation is complete.
+At time 1 a=0001, b=0010, c=0011 ,s=0000
+TEST PASSED
+At time 2 a=0001, b=0010, c=0011 ,s=0100
+TEST PASSED
+TEST FAILED
+At time 3 a=0001, b=0010, c=0011 ,s=1000
+Expected: w=xxxx, v=xxxx, y=xxxx, t=xxxx
+Simulation complete via $finish(1) at time 3 NS + 0
+./exec02_tb.v:28                 $finish;
 xcelium> exit
-TOOL:	xrun(64)	24.09-s001: Exiting on Mar 20, 2025 at 14:26:38 -03  (total: 00:00:02)
+TOOL:	xrun(64)	24.09-s001: Exiting on Mar 20, 2025 at 15:38:52 -03  (total: 00:00:01)

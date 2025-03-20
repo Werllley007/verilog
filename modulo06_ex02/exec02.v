@@ -60,26 +60,29 @@ module twelve_wrong#(parameter WIDTH = 4)(
     input       [WIDTH-1:0] a,b,c,s,
     output reg  [WIDTH-1:0] w,v,y,t
 );
-    // Remova o assign, pois 'w' é um 'reg' e não pode ser atribuído assim
-    // assign w = s;  // Erro: 'w' é um 'reg'
 
     always @(a or b or c or s) begin
+        // Para s == 0
         if (s == 0) begin
             v = a;
             y = b;
             t = c;
-            w = s; // Agora 'w' é atribuído corretamente aqui
+            w = s; // 'w' é atribuído corretamente
         end
+        // Para s <= 4'b0101
         else if (s <= 4'b0101) begin
             v = c;
             y = b;
             t = a;
-            w = s; // Atribuindo 'w' dentro de 'always'
+            w = s; // 'w' é atribuído corretamente
         end
-        else if (s == 6 || s == 7)  begin
-            v = c;
+        // Para s == 6 ou s == 7
+        else if (s == 6 || s == 7) begin
+            v = c;      // Atribuindo 'v' com o valor de 'c'
         end
-        else 
+        // Caso contrário
+        else begin
             v = 4'bxxxx;
+        end
     end
 endmodule
